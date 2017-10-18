@@ -1,20 +1,7 @@
-# Active Event Stack
+# Active Event Stack Lite
 
-[![npm](https://img.shields.io/npm/v/active-event-stack.svg?style=flat-square)](https://www.npmjs.com/package/active-event-stack)
+It's a fork of [qimingweng/active-event-stack](https://github.com/qimingweng/active-event-stack) with heavy dependencies removed. 
 
-This maintains one central stack, where each item is a series of event handlers. This stack allows multiple dialogs to overlap, but a keyboard action to only affect the top item.
+See details in [source](https://github.com/qimingweng/active-event-stack/issues/1) [repo](https://github.com/qimingweng/active-event-stack/pull/2).
 
-# Usage
-
-```javascript
-var eventStack = require('active-event-stack');
-
-// On mounting or creating an element, add a new listenable (a series of event listeners)
-this.eventToken = eventStack.addListenable([
-  ['click', this.clickHandler],
-  ['keydown', this.keydownHandler]
-]);
-
-// On dismounting or removing an element, remove the listenable by its token
-eventStack.removeListenable(this.eventToken);
-```
+It seems that source project is abandoned and there is no hope that PR will be merged. Still, I'm not happy to have 540kb of useless dependencies in my bundle. So this fix is published as different package. 
