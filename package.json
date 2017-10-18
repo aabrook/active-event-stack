@@ -1,5 +1,5 @@
 {
-  "name": "active-event-stack-lite",
+  "name": "active-event-stack",
   "version": "1.0.0",
   "description": "active-event-stack without heavy dependencies",
   "main": "lib",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qimingweng/active-event-stack"
+    "url": "https://github.com/jeron-diovis/active-event-stack"
   },
   "keywords": [
     "active",
