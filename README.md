@@ -6,7 +6,7 @@ See details in [source](https://github.com/qimingweng/active-event-stack/issues/
 
 It seems that source project is abandoned and there is no hope that PR will be merged. Still, I'm not happy to have 540kb of useless dependencies in my bundle. 
  
-This lib is used as dependency of [react-modal-dialog](https://github.com/qimingweng/react-modal-dialog) which I don't want to form to just override a single dependency.
+This lib is used as dependency of [react-modal-dialog](https://github.com/qimingweng/react-modal-dialog) which I don't want to fork to just override a single dependency.
 So problem can be solved via `npm-shrinkwrap.json` like this:
 
 ```json
